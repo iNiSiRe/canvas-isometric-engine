@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Test</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="margin-top: 20px">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-9">
+
+                <div class="panel panel-default">
+                    <div id="main" class="panel-body">
+                        <canvas id="viewport" style="border: 1px solid black; box-sizing: content-box;"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-md-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form name="create">
+                            <div class="form-group">
+                                <select name="template" class="form-control"></select>
+                            </div>
+
+                            <button name="add" type="button" class="btn btn-primary">Add</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Objects</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form name="editObject">
+
+                            <div class="form-group">
+                                <select id="object" class="form-control"></select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input name="sx" type="text" class="form-control" placeholder="x">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="sy" type="text" class="form-control" placeholder="y">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="sh" class="form-control" placeholder="h">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="sw" class="form-control" placeholder="w">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input name="x" type="text" class="form-control" placeholder="x">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="y" type="text" class="form-control" placeholder="y">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="h" type="text" class="form-control" placeholder="h">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input name="w" type="text" class="form-control" placeholder="w">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button name="save" type="button" class="btn btn-primary">Save</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Control</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form name="control">
+
+                            <div class="form-group">
+                                    <input name="zoom" type="text" class="form-control" placeholder="zoom">
+                            </div>
+
+                            <button name="save" type="button" class="btn btn-primary">Save</button>
+                        </form>
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/kernel.js"></script>
+</body>
+</html>
